@@ -1,4 +1,4 @@
-package com.carrey.mylibrary;
+package com.carrey.common;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

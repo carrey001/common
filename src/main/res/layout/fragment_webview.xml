@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </WebView>
+
+    <RelativeLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bottom_tab_heigt"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_home_bottom_tab"
+        android:padding="4dp"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/btn_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="8dp"
+            android:src="@drawable/btn_pre" />
+
+        <ImageButton
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/btn_pre"
+            android:background="@null"
+            android:padding="8dp"
+            android:src="@drawable/btn_next" />
+
+        <ImageButton
+            android:id="@+id/btn_refersh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="8dp"
+            android:src="@drawable/btn_refersh" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/webview_progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:max="100"
+        android:progressDrawable="@drawable/progressbar_webview" />
+
+</FrameLayout>
