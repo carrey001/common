@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"   
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/butten_normail_pop"
+    android:paddingBottom="23dp"
+    android:paddingLeft="37dp"
+    android:paddingRight="37dp"
+    android:paddingTop="23dp" >
+
+
+    <ProgressBar
+        android:id="@+id/loading_process_dialog_progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:indeterminateDrawable="@drawable/loading_data"
+        android:minHeight="@null"
+        android:minWidth="@null" />
+
+    <TextView
+        android:id="@+id/txtv_loading_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="#333333"
+        android:textIsSelectable="false" />
+
+</LinearLayout>
