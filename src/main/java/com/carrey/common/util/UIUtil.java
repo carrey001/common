@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.res.Resources;
-import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.AnimationDrawable;
 import android.graphics.drawable.Drawable;
@@ -847,7 +846,7 @@ public class UIUtil {
     public static void setTouchEffect(View view) {
         if (view == null)
             return;
-        view.setOnTouchListener(buildLayTouchListener(Color.parseColor("#bbbbbb"), view.getContext()));
+        view.setOnTouchListener(buildLayTouchListener(R.color.touch_color, view.getContext()));
     }
 
     /**

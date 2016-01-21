@@ -8,6 +8,14 @@
         android:allowBackup="false"
         android:label="@string/app_name"><!-- android:supportsRtl="true"  ///主要是方便开发者去支持阿拉伯语/波斯语等阅读习惯是从右往左的-->
 
+        <activity android:name=".view.photopick.PhotoViewActivity" />
+        <activity android:name=".view.photopick.BasePhotoPickActivity">
+            <intent-filter>
+                <action android:name="com.carrey.sample.PICK_PHOTO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

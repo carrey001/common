@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="BaseRecyclerView">
+        <attr name="android:divider"/>
+        <attr name="android:dividerHeight"/>
+        <attr name="android:listSelector"/>
+        <attr name="recyclerStyle">
+            <enum name="list" value="0"></enum>
+            <enum name="grid" value="1"></enum>
+            <enum name="staggered_grid" value="2"></enum>
+        </attr>
+        <attr name="android:orientation"/>
+        <attr name="android:numColumns"/>
+        <attr name="android:verticalSpacing"/>
+        <attr name="android:horizontalSpacing"/>
+    </declare-styleable>
+
+    <string name="recent_photos">最近照片</string>
+    <string name="preview">预览</string>
+    <string name="more_than_max">超过了上限</string>
+    <string name="select_photos">选择照片</string>
+    <string name="taking_pictures">拍摄照片</string>
+    <string name="max_img_limit_reached">不能选择超过%d个图像</string>
+</resources>

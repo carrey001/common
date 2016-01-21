@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000" >
+
+    <com.carrey.common.view.photoview.PhotoView
+        android:id="@+id/photoview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <com.carrey.common.view.RoundProgressBar
+        android:id="@+id/prsbar"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

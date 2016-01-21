@@ -48,7 +48,7 @@ public class BitmapTools {
     }
 
     public void display(ImageView container, String uri) {
-        display(container, uri, 0, 0, SizeType.LARGE, 0, null);
+        display(container, uri, 0, 0, SizeType.CUSTOM, 0, null);
     }
 
     public void display(ImageView container, String uri, SizeType sizeType) {
@@ -59,16 +59,29 @@ public class BitmapTools {
         display(container, uri, 0, 0, sizeType, defaultDrawableRes, null);
     }
 
-    public void display(ImageView container, String uri, int width, int height, int defaultDrawableRes) {
-        display(container, uri, width, height, SizeType.CUSTOM, defaultDrawableRes, null);
+    public void display(ImageView container, String uri, SizeType sizeType, int defaultDrawableRes,
+                        Callback.CommonCallback<Drawable> callBack) {
+        display(container, uri, 0, 0, sizeType, defaultDrawableRes, callBack);
     }
+
 
     public void display(ImageView container, String uri, int width, int height) {
         display(container, uri, width, height, SizeType.CUSTOM, 0, null);
     }
 
-    public void display(ImageView container, String uri, SizeType sizeType, int defaultDrawableRes, Callback.CommonCallback<Drawable> callBack) {
-        display(container, uri, 0, 0, sizeType, defaultDrawableRes, callBack);
+    public void display(ImageView container, String uri, int width, int height, int defaultDrawableRes) {
+        display(container, uri, width, height, SizeType.CUSTOM, defaultDrawableRes, null);
+    }
+
+    public void display(ImageView container, String uri, int width, int height, int defaultDrawableRes,
+                        Callback.CommonCallback<Drawable> callBack) {
+        display(container, uri, width, height, SizeType.CUSTOM, defaultDrawableRes, callBack);
+    }
+
+
+    public void display(ImageView container, String uri, Callback.CommonCallback<Drawable> callBack) {
+        display(container, uri, 0, 0, SizeType.CUSTOM, 0, callBack);
+
     }
 
     /* imageOptions = new ImageOptions.Builder()
@@ -83,7 +96,8 @@ public class BitmapTools {
                 .setFailureDrawableId(R.mipmap.ic_launcher)
                 .build();*/
 
-    public void display(ImageView container, String url, int width, int height, final SizeType sizeType, int defaultDrawableRes, Callback.CommonCallback<Drawable> callback) {
+    public void display(ImageView container, String url, int width, int height, final SizeType sizeType,
+                        int defaultDrawableRes, Callback.CommonCallback<Drawable> callback) {
         ImageOptions imageOptions = builder.build();
         switch (sizeType) {
             case LARGE:
